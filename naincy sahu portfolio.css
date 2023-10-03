@@ -1,0 +1,479 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,body{
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+}
+#main{
+    width: 100%;
+    background-color: #020202;
+    color:white;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+}
+#nav{
+    height: 4vw;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:7vw;
+    margin-right:10px;
+    /* position: fixed; */
+}
+#nav img{
+    height: 70px;
+    width: 250px;
+    object-fit: cover;
+    margin-left: 140px;
+}
+#nav h1{
+    font-size: 1.3vw;
+    font-weight: 500; 
+    border-bottom: 2px solid aqua;  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#nav h1:active
+{
+   font-size: 1.5vw;
+}
+#image{
+    height: 30vw;
+    width: 30vw;
+    background-color: aqua;
+    margin-top: 8vw;
+    margin-left: 9vw;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid aqua;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    /* box-shadow: 4px 4px 10px rgb(208, 40, 40)  ; */
+}
+
+/* @keyframes img-ani
+{
+    0%{background-color: aqua;}
+    50%{background-color: rgba(0, 255, 255, 0.5);}
+    100%{background-color: rgba(4, 83, 83, 0.5);}
+}
+#image:
+{
+    animation-name: img-ani ;
+    animation-duration:2s ;
+    animation-timing-function: linear ;
+    animation-iteration-count:  infinite;
+    animation-direction:  alternative;
+} */
+@keyframes img-ani
+{
+    0%{}
+    /* 50%{margin-top: -3px;} */
+    100%{margin-top: 3px;}
+}
+#image
+{
+    animation-name: img-ani ;
+    animation-duration: 5s ;
+    animation-timing-function: ease ;
+    animation-iteration-count:  infinite;
+    animation-direction:  alternative;
+}
+#t0{
+    font-size: 2vw;
+    letter-spacing: 0vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    margin-left: 48vw;
+    margin-top: -25vw;
+    color: aqua;
+    line-height: 1vw;
+    animation: none;
+}
+#t1{
+    font-size: 5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 450;
+    margin-left: 48vw;
+    margin-top: 1.1vw;
+    line-height: 2vw;
+    animation: none;
+}
+#t1 span{
+    color:aqua;
+    animation: none;
+}
+#t2
+{
+    font-size: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    margin-left: 48vw;
+    margin-top: 2.1vw;
+    line-height: 3vw;
+    animation: none;
+}
+#but{
+    font-size: 1.2vw;
+    padding:5px 15px;
+    color:#020202;
+    background-color: aqua;
+    margin-top: 7vw;
+    margin-left: 49vw;
+    border:none;
+    border-radius: 5px;
+    transition: all ease 1s;
+    animation: none;
+}
+#butt{
+    font-size: 1.2vw;
+    padding:5px 15px;
+    color: aqua;
+    background-color: transparent;
+    border:2px solid aqua;
+    margin-left: 3vw;
+    border-radius: 5px;
+    transition: all ease 1s;
+    animation: none;
+}
+#butt a
+{
+    color: rgba(0, 255, 255);
+    text-decoration: none;
+    animation: none;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+.elem{
+    height: 70%;
+    width: 45%;
+    background-color:transparent;
+    margin-left:100px ;
+    margin-top: 6vw;
+}
+#page2 h1{
+    padding-top: 5vw;
+    color:white;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#page2 h1 span
+{
+    text-align: center;
+    color:aqua;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#page2 h3
+{
+    line-height:90px;
+    font-size: 30px;
+    text-align: left;
+}
+#page2 .elem p{
+    font-size: 25px; 
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#image2
+{
+    height: 30vw;
+    width: 30vw;
+    margin-left: 10vw;
+    margin-top: 7vw;
+    object-fit: cover;
+    object-position: top;
+    border: 5px solid aqua;
+    border-radius: 50%;
+    box-shadow: 0px 20px 20px aqua;
+    background-image: url("picstures.jfif");
+    background-size: cover;
+}
+#image2:hover
+{
+    transition: 1s ease;
+    transform: scale(1.1); 
+} 
+#page3
+{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+#page3 h1
+{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#box
+{
+    height: 32vw;
+    width: 100%;
+    margin-top: 5.5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.boxses
+{
+    height: 250px;
+    width: 400px;
+    border: 1px solid aqua;  
+    border-radius: 25%;
+    text-align: left; 
+    box-shadow: 5px 5px 15px rgba(0, 255, 255, 0.8);
+}
+.box-content
+{
+    height: 600px;
+    width: 400px;
+}
+.box-content ul
+{
+    padding: 10px;
+}
+.box-content h2
+{
+    color: aqua;
+    font-size: 1.8vw;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+.box-content p
+{
+    font-size:1.3vw ;
+    margin-top: 2.5vw;
+    text-align: left;
+}
+#box1
+{
+    background-image: url("LAnding\ Page\ iamge.jpg");
+    background-size: cover;
+}
+#box1:hover
+{
+    background-image: url("LAnding\ Page\ iamge.jpg");
+    background-size: cover;
+    transition: 1s;
+    transition-timing-function: steps(3);
+    border-radius: 0px;
+}
+#box2
+{
+    background-image: url("Power\ BI\ 1\ img.jfif");
+    background-size: cover;
+    margin-top: 30px;
+}
+#box2:hover
+{
+    background-image: url("Power\ BI\ 2.jfif");
+    background-size: cover;
+    transition: 1s;
+    transition-timing-function: steps(3);
+    border-radius: 0px;
+}
+#linkedin
+{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    cursor: pointer;
+}
+#linkedin a
+{
+    text-decoration: none;
+    color: blue;
+}
+#page4
+{
+    height: 100vh;
+    width: 100%;
+}
+#page4 h1
+{
+    margin-top: 80px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#page4 h1 span
+{
+    color: aqua;
+}    
+input
+{
+    display: block;
+    background-color: #1f2121;
+    height: 65px;
+    width: 570px;
+    margin-left: 32vw;
+    margin-top: 10px;
+    padding: 8px;
+    color: aqua;
+    border: none;
+    border-radius: 7px;
+}
+#page4 p
+{
+    text-align: left;
+    font-size: large;
+    padding-top: 7px;
+    margin-left: 32vw;
+}
+textarea
+{
+    height: 65px;
+    width: 570px;
+    resize: none;
+    /* display: block; */
+    background-color: #1f2121;
+    margin-left: 32vw;
+    margin-top: 10px;
+    padding: 8px;
+    color: aqua;
+    border: none;
+    border-radius: 7px;
+}
+#buttt
+{
+    height: 35px;
+    width: 300px;
+    background-color: aqua;
+    box-shadow: 1px 1px 30px aqua;
+    margin-top: 25px;
+    border-radius: 30px;
+    margin-left: 42%;
+    border: none;
+    font-size: 2em;
+    color: #2222eaf0;
+}
+#page4 #footer
+{
+    padding-top: 10px;
+    background-color: #1f2121;
+    padding-bottom:10px;
+    margin-left: 0;
+    margin-top: 1px;
+    padding-left: 7px;
+}
+#icons{
+    height: 3vw;
+    width: 30vw;
+    margin-top: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#icons i
+{
+    font-size:20px ;
+}
+#icons i:hover
+{
+    font-size: 30px;
+}    
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    padding:0px 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+#page5 h2{
+    font-size: 5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 8vw;
+    font-weight: 400;
+    color:aqua;
+
+    /* text-decoration: underline 2px solid aqua; */
+}
+.skillsrow{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5rem;
+}
+.skillscol{
+    flex:1 1 40rem;
+    margin-top: 5vw;
+}
+.skillscol .title{
+    font-size: 2.5rem;
+    margin:0 0 1.5rem;
+}
+.skillsbox .skillscontent{
+    position:relative;
+    border :.2rem solid aqua;
+    border-radius: .6rem;
+    padding:.5rem 1.5rem;
+}
+.skillscontent .progress{
+    padding:.5rem 0;
+}
+.skillscontent .progress h3{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skillscontent .progress h3 span{
+    color:white;    
+}
+.skillscontent .progress .bar{
+    height: .8rem;
+    border-radius: .6rem;
+    background-color:aqua;
+    border: .2rem solid white;
+    padding: 0rem;
+    width:100%;
+    margin:1.5rem 0;
+    /* width: 100%; */
+}
+.skillscontent .progress .bar span{
+    display: block;
+    height: 100%;
+    /* color: aqua; */
+    border-radius: .3rem;
+}
+.skillscol:nth-child(1) .skillscontent .progress:nth-child(1) .bar {
+    width: 90%;
+}
+.skillscol:nth-child(1) .skillscontent .progress:nth-child(2) .bar{
+    width: 80%;
+}
+.skillscol:nth-child(1) .skillscontent .progress:nth-child(3) .bar{
+    width: 70%;
+}
+.skillscol:nth-child(1) .skillscontent .progress:nth-child(4) .bar{
+    width: 75%;
+}
+.skillscol:nth-child(2) .skillscontent .progress:nth-child(1) .bar {
+    width: 65%;
+}
+.skillscol:nth-child(2) .skillscontent .progress:nth-child(2) .bar{
+    width: 67%;
+}
+.skillscol:nth-child(2) .skillscontent .progress:nth-child(3) .bar{
+    width: 70%;
+}
+.skillscol:nth-child(2) .skillscontent .progress:nth-child(4) .bar{
+    width: 72%;
+}
